@@ -1,0 +1,38 @@
+.card{
+    width: 80%;
+    display: flex;
+    flex-wrap: wrap;
+    height: fit-content;
+    border: 1px solid rgb(117, 114, 114);
+    overflow: hidden;
+    justify-content: space-between;
+    animation: mymove 2s;
+
+}
+.card:hover{
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;    transition: 1s;
+}
+.cardImg{
+    height: 40vh;
+    width: 60vh;
+}
+.box{
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+.container{
+    display: flex;
+    flex-direction: column;
+    margin: 10px;
+    margin-bottom: 100;
+    justify-content: center;
+    align-items: center;
+}
+
+
+@keyframes mymove {
+    100%   {transform: rotate(0deg);}
+    0% {transform: rotate(60deg);}
+  }
